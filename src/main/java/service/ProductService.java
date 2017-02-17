@@ -7,11 +7,11 @@ import java.util.stream.Stream;
 
 public class ProductService{
 
-   public List<String > convertToStringNameArray(Stream<Product> products){
+   public List<String > getNames(Stream<Product> products){
       return null;
    }
 
-   public Double sumOfPrice(Stream<Product> products){
+   public Double sumOfPrices(Stream<Product> products){
       return null;
    }
 }

@@ -13,29 +13,29 @@ public class ProductServiceTest {
    private ProductService productService = new ProductService();
 
    @Test
-   public void should_convert_an_array_of_product_to_an_array_of_string(){
+   public void should_return_names_of_given_products(){
       List<Product> products = Arrays.asList(
               new Product(1, "DOLIPRANE", "335214", 0.0),
               new Product(2, "CARDIOXANE", "338794", 0.0),
               new Product(1, "DONORMYL", "337456", 0.0)
       );
 
-      List<String> names = productService.convertToStringNameArray(products.stream());
+      List<String> names = productService.getNames(products.stream());
 
       assertThat(names).containsExactly("DOLIPRANE", "CARDIOXANE", "DONORMYL");
    }
 
    @Test
-   public void should_compute_the_price_sum_of_a_product_list(){
+   public void should_return_the_price_sum_of_given_products(){
       List<Product> products = Arrays.asList(
               new Product(1, "DOLIPRANE", "335214", 1.0),
               new Product(2, "CARDIOXANE", "338794", 1.0),
               new Product(1, "DONORMYL", "337456", 1.0)
       );
 
-      Double sum = productService.sumOfPrice(products.stream());
+      Double sum = productService.sumOfPrices(products.stream());
 
-      assertThat(sum).isEqualTo(3.0F);
+      assertThat(sum).isEqualTo(3.0);
    }
 
 }
