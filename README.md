@@ -9,6 +9,6 @@
     <tr>
         <td>1</td>
         <td>exo1</td>
-        <td>Simple Java 8 exercise, the goal is to developp 2 methodes (descibed in ProductServiceTest) in ProductService</td>
+        <td>Simple Java 8 exercise, the goal is to developp the 2 methodes descibed in ProductServiceTest</td>
     </tr>
 </table>
